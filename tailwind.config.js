@@ -5,11 +5,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: (theme) => ({
+        home: "url('/images/background.png')",
+      }),
       fontFamily: {
         body: ["Montserrat", "sans-serif"],
       },
     },
     
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }
