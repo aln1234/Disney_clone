@@ -1,9 +1,9 @@
-function Movie() {
-    return (
-        <div>
+// function Movie() {
+//     return (
+//         <div>
             
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
 
-export default Movie
+// export default Movie
