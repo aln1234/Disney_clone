@@ -25,8 +25,8 @@ function Header() {
             onClick = {() => router.push("/ ")}
             />
          
-            {
-                session ? (
+            {/* {
+                session ? ( */}
                     <>
                        <div className="hidden ml-10 md:flex items-center space-x-6 mt-4">
                 <a className="header-link group">
@@ -65,14 +65,19 @@ function Header() {
                 </a>
               
             </div>
-            <img  src={session?.user?.image}
+            <div className="relative ml-auto  ">
+            <img  src="/images/pp.jpeg"
                     onClick={signOut}
                     alt="profile pic"
-                    className="h-10 rounded-full cursor-pointer ml-auto"/>
+                    className="rounded-full w-10 h-10 "
+                    />
+
+            </div>
+          
                     </>
                    
 
-                ):(
+                {/* ):(
                     <button className="ml-auto uppercase border px-4 py-1.5 rounded
                     font-medium tracking-wide hover:bg-white hover:text-black
                     transition duration-200"
@@ -80,7 +85,7 @@ function Header() {
                     >Login</button>
 
                 )
-            }
+            } */}
           
               
             
